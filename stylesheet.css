@@ -1,0 +1,90 @@
+/* css */
+
+body {
+    background-color: #E4E8EF;
+}
+
+/* ATTEMPT 1 */
+
+/*.circle {
+    background-color: white;
+    border: solid 3px #29abe2;
+    border-radius: 50%;
+    height: 300px;
+    margin: 5%;
+    position: relative;
+    width: 300px;
+}*/
+
+/*@keyframes wave {
+    from { background-position: right bottom; }
+    to { background-position: left bottom; }
+}*/
+
+/*@keyframes wave {
+    0%   {left: 0px; bottom: 0px;}
+    75%  {left: 100px; bottom: 0px}
+    100% {left: 0px; bottom: 0px;}
+}*/
+
+/*.water {
+    animation: wave 5s linear infinite;
+    background-image: url("water.svg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+    width: 600px;
+}*/
+
+
+/* ATTEMPT 2 */
+
+.circle {
+    background: rgba( 255, 255, 255, 0.50);
+    border: 3px solid #29abe2;
+    /*border-radius: 50%;*/
+    width: 300px;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.water {
+    background-image: url("water.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    overflow:hidden;
+    bottom: 0px;
+    width: 300px;
+    height: 100px;
+    -webkit-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    transition: all 3s ease-out;
+    z-index: 0;
+}
+.circle:hover .water {
+    height: 350px;
+    /*background-position: top left;*/
+    -webkit-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    transition: all 3s ease-out;
+}
+
+/* ATTEMPT 3 */
+
+.circle {
+    background: rgba( 255, 255, 255, 0.50);
+    border: 3px solid #29abe2;
+    /*border-radius: 50%;*/
+    width: 300px;
+    height: 300px;
+    position: relative;
+    z-index: 1;
